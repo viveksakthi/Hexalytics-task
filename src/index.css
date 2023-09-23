@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  @apply text-zinc-700;
+  @apply leading-snug;
+  @apply text-sm;
+  font-family: 'Open Sans', sans-serif;
+}
+[id*='headlessui-tabs-panel-']{
+  @apply outline-none
+}
+.ant-table table { font-size: 10px; }
+.ant-pagination.ant-table-pagination-right{
+  @apply justify-center;
+}
+.ant-table-wrapper .ant-table-tbody>tr>td, .ant-table-wrapper .ant-table-thead>tr>th{
+  @apply px-3;
+  @apply py-2;
+}
+.ant-table-wrapper .ant-table-thead >tr>th:before{
+  @apply hidden
+}
+
